@@ -243,7 +243,7 @@ $$
 B(\alpha)=\mathbb E_{\rm GR\ posterior}[r_\alpha],\qquad \inf r_\alpha\le B(\alpha)\le\sup r_\alpha .
 $$
 
-This holds when $\Phi_\alpha$ is injective, when $\Phi_{\alpha\#}(w_{\rm pQCD}\pi)\ll w_{\rm pQCD}\pi$ on the astrophysical support, and when $r_\alpha$ carries the indicator of effective EOS that give a stable star. Under these conditions the stellar evidence measures a change of prior density, not gravity. Gravity-independent constraints on the physical EOS (pQCD, crust physics) break the degeneracy only through $r_\alpha$, and the numbers above show the effect is weak. The evidences themselves are computed directly, without assuming these conditions.
+This holds when $\Phi_\alpha$ is injective, when $\Phi_{\alpha\sharp}(w_{\rm pQCD}\pi)\ll w_{\rm pQCD}\pi$ on the astrophysical support, and when $r_\alpha$ carries the indicator of effective EOS that give a stable star. Under these conditions the stellar evidence measures a change of prior density, not gravity. Gravity-independent constraints on the physical EOS (pQCD, crust physics) break the degeneracy only through $r_\alpha$, and the numbers above show the effect is weak. The evidences themselves are computed directly, without assuming these conditions.
 
 **Crust condition.** Static, stable crusts need $d\tilde p/d\varepsilon=c_s^2-(\alpha+\beta)\kappa\varepsilon+\dots>0$, i.e. $\alpha+\beta<\min_{\rm crust}c_s^2/(\kappa\varepsilon)$. For $\beta=0$ the exact condition is $\alpha\kappa[(1-3c_s^2)(\varepsilon+p)-2c_s^2(\varepsilon-3p)]<c_s^2$.
 
