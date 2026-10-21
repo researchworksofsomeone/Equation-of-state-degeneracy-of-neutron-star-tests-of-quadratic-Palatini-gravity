@@ -224,12 +224,12 @@ together with:
 
 | factor | input | form |
 |---|---|---|
-| NICER J0030, J0740, J0437 | split-normal summaries (Brandes et al.) | $\int dM\,\mathcal N(M)\mathcal N(R(M))/(M_{\max}-1)$ |
-| GW170817 | $\tilde\Lambda_{\rm t}=300^{+420}_{-230}$ (90%), $\mathcal M=1.186\,M_\odot$ | split normal with $\sigma_\pm=420/1.645,\ 230/1.645$, averaged over 24 $q\in[0.73,1]$ |
-| J0348, J1614 (baseline) | $2.01\pm0.04$, $1.908\pm0.016\,M_\odot$ | $[\Phi((M_{\max}-M_k)/\sigma_k)-\Phi((1-M_k)/\sigma_k)]/(M_{\max}-1)$ |
-| J0952 ("+J0952") | $2.35\pm0.17\,M_\odot$ | same as above |
-| pQCD ("+pQCD") | $\mu_H=2.6$ GeV, $X\in[1,4]$ | fraction of $\ln X$ for which the TOV centre is connectable; applied to the physical EOS |
-| Vela ("+Vela G") | G = 1.6% or 7% | $\tfrac14\sum_{m\in\{1.2,1.4,1.6,1.8\}}\Theta(\Delta I_c/I\vert_m-G)$ |
+| NICER J0030, J0740, J0437 | split-normal summaries (Brandes et al.) | $\int dM~\mathcal N(M)\mathcal N(R(M))/(M_{\max}-1)$ |
+| GW170817 | $\tilde\Lambda_{\rm t}=300^{+420}\_{-230}$ (90%), $\mathcal M=1.186~M\_\odot$ | split normal with $\sigma\_\pm = 420/1.645$, $230/1.645$, averaged over 24 $q \in [0.73, 1]$ |
+| J0348, J1614 (baseline) | $2.01\pm0.04$, $1.908\pm0.016~M\_\odot$ | $[\Phi((M_{\max}-M\_k)/\sigma\_k)-\Phi((1-M\_k)/\sigma\_k)]/(M_{\max}-1)$ |
+| J0952 ("+J0952") | $2.35\pm0.17~M\_\odot$ | same as above |
+| pQCD ("+pQCD") | $\mu\_H=2.6$ GeV, $X\in[1,4]$ | fraction of $\ln X$ for which the TOV centre is connectable; applied to the physical EOS |
+| Vela ("+Vela G") | G = 1.6% or 7% | $\tfrac14\sum_{m\in\\{1.2,1.4,1.6,1.8\\}}\Theta(\Delta I\_c/I\vert\_m-G)$ |
 
 **Evidence and Bayes factor.** Over $N$ draws common to all couplings,
 
