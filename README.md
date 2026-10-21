@@ -8,6 +8,7 @@ Code accompanying the paper *"Equation-of-state degeneracy of neutron-star tests
 | Same notebook for Jupyter: `palatini_jeans_window.ipynb` | this repository |
 | All checkpoints, JSON exports of every quoted number, paper figures | [Hugging Face dataset `palatini-molab-runs`](https://huggingface.co/datasets/APassionateResearchers/palatini-molab-runs/tree/main) |
 | Release builder (strips secrets, exports `.ipynb`) | `make_release.py` |
+| Complete BibTeX reference collection | [`references.bib`](references.bib) |
 
 The notebook was written for [marimo](https://marimo.io) and run on molab (one GPU with 70 GB VRAM, 30 GB RAM). Every expensive stage writes per-point checkpoints, so any stage can be resumed, and the whole paper can be regenerated from the published checkpoints without a GPU.
 
@@ -26,6 +27,7 @@ The notebook was written for [marimo](https://marimo.io) and run on molab (one G
 9. [Checkpoint layout on Hugging Face](#9-checkpoint-layout-on-hugging-face)
 10. [Environment variables](#10-environment-variables)
 11. [Security and anonymity](#11-security-and-anonymity)
+12. [References](#12-references)
 
 ---
 
@@ -430,4 +432,112 @@ The released notebook contains no access tokens, e-mail addresses or personal pa
 
 ## Citation
 
-Please cite the accompanying paper (bibliographic details to be added on publication).
+Please cite the accompanying paper:
+> *Equation-of-state degeneracy of neutron-star tests of quadratic Palatini gravity and a lepton-universality bound from electronic and muonic charge radii* (bibliographic details to be added on publication).
+
+Machine-readable citations for all works and datasets utilized in this study are provided in [](references.bib).
+
+---
+
+## 12. References
+
+A comprehensive list of foundational literature, theoretical derivations, nuclear and astrophysical data, and observational datasets cited in this research. The complete machine-readable BibTeX file is available at [`references.bib`](references.bib).
+
+### 12.1 Ricci-Based & Palatini Gravity
+
+- **Afonso, Victor I., Olmo, Gonzalo J., & Rubiera-Garcia, Diego**. *"Mapping Ricci-based theories of gravity into general relativity"*, *Phys. Rev. D* **97**, 021503 (2018). [doi:10.1103/PhysRevD.97.021503](https://doi.org/10.1103/PhysRevD.97.021503) · [arXiv:1801.10406](https://arxiv.org/abs/1801.10406).
+- **Delhom, Adrià, Miralles, Victor, & Peñuelas, Ana**. *"Effective interactions in Ricci-Based Gravity below the non-metricity scale"*, *Eur. Phys. J. C* **80**, 340 (2020). [doi:10.1140/epjc/s10052-020-7880-3](https://doi.org/10.1140/epjc/s10052-020-7880-3) · [arXiv:1907.05615](https://arxiv.org/abs/1907.05615).
+- **Latorre, Andrea, Olmo, Gonzalo J., & Ronco, Michele**. *"Observable traces of non-metricity: New constraints on metric-affine gravity"*, *Phys. Lett. B* **780**, 294–299 (2018). [doi:10.1016/j.physletb.2018.03.002](https://doi.org/10.1016/j.physletb.2018.03.002) · [arXiv:1709.04249](https://arxiv.org/abs/1709.04249).
+- **Beltrán Jiménez, Jose, Delhom, Adrià, Olmo, Gonzalo J., & Orazi, Emanuele**. *"Born-Infeld gravity: Constraints from light-by-light scattering and an effective field theory perspective"*, *Phys. Lett. B* **820**, 136479 (2021). [doi:10.1016/j.physletb.2021.136479](https://doi.org/10.1016/j.physletb.2021.136479) · [arXiv:2104.01647](https://arxiv.org/abs/2104.01647).
+- **Flanagan, Éanna É.**. *"Palatini form of 1/R gravity"*, *Phys. Rev. Lett.* **92**, 071101 (2004). [doi:10.1103/PhysRevLett.92.071101](https://doi.org/10.1103/PhysRevLett.92.071101) · [arXiv:astro-ph/0308111](https://arxiv.org/abs/astro-ph/0308111).
+- **Olmo, Gonzalo J.**. *"Hydrogen atom in Palatini theories of gravity"*, *Phys. Rev. D* **77**, 084021 (2008). [doi:10.1103/PhysRevD.77.084021](https://doi.org/10.1103/PhysRevD.77.084021) · [arXiv:0802.4038](https://arxiv.org/abs/0802.4038).
+- **Olmo, Gonzalo J.**. *"Palatini approach to modified gravity: f(R) theories and beyond"*, *Int. J. Mod. Phys. D* **20**, 413–462 (2011). [doi:10.1142/S0218271811018925](https://doi.org/10.1142/S0218271811018925) · [arXiv:1101.3864](https://arxiv.org/abs/1101.3864).
+- **Li, Baojiu, Mota, David F., & Shaw, Douglas J.**. *"Microscopic and macroscopic behaviors of Palatini modified gravity theories"*, *Phys. Rev. D* **78**, 064018 (2008). [doi:10.1103/PhysRevD.78.064018](https://doi.org/10.1103/PhysRevD.78.064018).
+- **Li, Baojiu, Mota, David F., & Shaw, Douglas J.**. *"Indistinguishable macroscopic behaviour of Palatini gravities and general relativity"*, *Class. Quantum Grav.* **26**, 055018 (2009). [doi:10.1088/0264-9381/26/5/055018](https://doi.org/10.1088/0264-9381/26/5/055018) · [arXiv:0801.0603](https://arxiv.org/abs/0801.0603).
+- **Delsate, Térence & Steinhoff, Jan**. *"New insights on the matter-gravity coupling paradigm"*, *Phys. Rev. Lett.* **109**, 021101 (2012). [doi:10.1103/PhysRevLett.109.021101](https://doi.org/10.1103/PhysRevLett.109.021101).
+- **Barausse, Enrico, Sotiriou, Thomas P., & Miller, John C.**. *"A no-go theorem for polytropic spheres in Palatini f(R) gravity"*, *Class. Quantum Grav.* **25**, 062001 (2008). [doi:10.1088/0264-9381/25/6/062001](https://doi.org/10.1088/0264-9381/25/6/062001).
+- **Pani, Paolo & Sotiriou, Thomas P.**. *"Surface singularities in Eddington-inspired Born-Infeld gravity"*, *Phys. Rev. Lett.* **109**, 251102 (2012). [doi:10.1103/PhysRevLett.109.251102](https://doi.org/10.1103/PhysRevLett.109.251102).
+- **Lope-Oter, Eva & Wojnar, Aneta**. *"Constraining Palatini gravity with GR-independent equations of state for neutron stars"*, *J. Cosmol. Astropart. Phys.* **2024**(02), 017 (2024). [doi:10.1088/1475-7516/2024/02/017](https://doi.org/10.1088/1475-7516/2024/02/017) · [arXiv:2306.00870](https://arxiv.org/abs/2306.00870).
+- **Staykov, Kalin et al.**. *"Moment of inertia of neutron star crust in alternative and modified theories of gravity"*, *Phys. Rev. D* **94**, 024056 (2016). [doi:10.1103/PhysRevD.94.024056](https://doi.org/10.1103/PhysRevD.94.024056) · [arXiv:1507.05878](https://arxiv.org/abs/1507.05878).
+
+### 12.2 Proton/Nuclear Radii & Lepton Universality
+
+- **Miller, Gerald A.**. *"The Proton Radius Puzzle"*, Preprint (2026). [arXiv:2604.15546 [nucl-th]](https://arxiv.org/abs/2604.15546).
+- **Potvliege, R. M.**. *"Spectroscopy of light atoms and bounds on physics beyond the standard model"*, Preprint (2024). [arXiv:2412.16315 [physics.atom-ph]](https://arxiv.org/abs/2412.16315).
+- **Antognini, Aldo et al.**. *"Proton structure from the measurement of 2S-2P transition frequencies of muonic hydrogen"*, *Science* **339**, 417–420 (2013). [doi:10.1126/science.1230016](https://doi.org/10.1126/science.1230016).
+- **Pohl, Randolf et al.**. *"The size of the proton"*, *Nature* **466**, 213–216 (2010). [doi:10.1038/nature09250](https://doi.org/10.1038/nature09250).
+- **Pohl, Randolf et al.**. *"Laser spectroscopy of muonic deuterium"*, *Science* **353**, 669–673 (2016). [doi:10.1126/science.aaf2468](https://doi.org/10.1126/science.aaf2468).
+- **Krauth, Julian J. et al.**. *"Measuring the $\alpha$-particle charge radius with muonic helium-4 ions"*, *Nature* **589**, 527–531 (2021). [doi:10.1038/s41586-021-03183-1](https://doi.org/10.1038/s41586-021-03183-1).
+- **Sick, Ingo**. *"Precise root-mean-square radius of $^4$He"*, *Phys. Rev. C* **77**, 041302 (2008). [doi:10.1103/PhysRevC.77.041302](https://doi.org/10.1103/PhysRevC.77.041302).
+- **Xiong, W. et al.**. *"A small proton charge radius from an electron–proton scattering experiment"*, *Nature* **575**, 147–150 (2019). [doi:10.1038/s41586-019-1721-2](https://doi.org/10.1038/s41586-019-1721-2).
+- **Beyer, Axel et al.**. *"The Rydberg constant and proton size from atomic hydrogen"*, *Science* **358**, 79–85 (2017). [doi:10.1126/science.aah6677](https://doi.org/10.1126/science.aah6677).
+- **Fleurbaey, Hervé et al.**. *"New measurement of the 1S-3S transition frequency of hydrogen: Contribution to the proton charge radius puzzle"*, *Phys. Rev. Lett.* **120**, 183001 (2018). [doi:10.1103/PhysRevLett.120.183001](https://doi.org/10.1103/PhysRevLett.120.183001).
+- **Bezginov, N. et al.**. *"A measurement of the atomic hydrogen Lamb shift and the proton charge radius"*, *Science* **365**, 1007–1012 (2019). [doi:10.1126/science.aau7807](https://doi.org/10.1126/science.aau7807).
+- **Grinin, Alexey et al.**. *"Two-photon frequency comb spectroscopy of atomic hydrogen"*, *Science* **370**, 1061–1066 (2020). [doi:10.1126/science.abc7776](https://doi.org/10.1126/science.abc7776).
+- **Brandt, A. D. et al.**. *"Measurement of the $2S_1/2$–$8D_5/2$ transition in hydrogen"*, *Phys. Rev. Lett.* **128**, 023001 (2022). [doi:10.1103/PhysRevLett.128.023001](https://doi.org/10.1103/PhysRevLett.128.023001) · [arXiv:2111.08554](https://arxiv.org/abs/2111.08554).
+- **Wang, Li-Bang & Ni, Wei-Tou**. *"Proton radius puzzle and large extra dimensions"*, *Mod. Phys. Lett. A* **28**, 1350094 (2013). [doi:10.1142/S0217732313500946](https://doi.org/10.1142/S0217732313500946) · [arXiv:1303.4885](https://arxiv.org/abs/1303.4885).
+- **Li, Zhigang & Chen, Xuelei**. *"Can large extra dimensions solve the proton radius puzzle?"*, Preprint (2013). [arXiv:1303.5146 [hep-ph]](https://arxiv.org/abs/1303.5146).
+- **Dahia, F. & Lemos, A. S.**. *"Is the proton radius puzzle evidence of extra dimensions?"*, *Eur. Phys. J. C* **76**, 435 (2016). [doi:10.1140/epjc/s10052-016-4266-7](https://doi.org/10.1140/epjc/s10052-016-4266-7).
+
+### 12.3 Neutron Star Structure & Nuclear Equations of State
+
+- **Koranda, Scott, Stergioulas, Nikolaos, & Friedman, John L.**. *"Upper limits set by causality on the rotation and mass of uniformly rotating relativistic stars"*, *Astrophys. J.* **488**, 799–806 (1997).
+- **Rezzolla, Luciano & Ecker, Christian**. *"On the maximum compactness of neutron stars"*, *SciPost Phys.* **20**, 014 (2026). [doi:10.21468/SciPostPhys.20.1.014](https://doi.org/10.21468/SciPostPhys.20.1.014) · [arXiv:2510.12870](https://arxiv.org/abs/2510.12870).
+- **Cai, Bao-Jun & Li, Bao-An**. *"Unraveling trace anomaly of supradense matter via neutron star compactness scaling"*, *Phys. Rev. D* **112**, 023023 (2025). [doi:10.1103/3p2p-p3d4](https://doi.org/10.1103/3p2p-p3d4).
+- **Fujimoto, Yuki, Fukushima, Kenji, McLerran, Larry D., & Praszałowicz, Michał**. *"Trace anomaly as signature of conformality in neutron stars"*, *Phys. Rev. Lett.* **129**, 252702 (2022). [doi:10.1103/PhysRevLett.129.252702](https://doi.org/10.1103/PhysRevLett.129.252702).
+- **Brandes, Len & Weise, Wolfram**. *"Implications of latest NICER data for the neutron star equation of state"*, *Phys. Rev. D* **111**, 034005 (2025). [doi:10.1103/PhysRevD.111.034005](https://doi.org/10.1103/PhysRevD.111.034005) · [arXiv:2412.05923](https://arxiv.org/abs/2412.05923).
+- **Komoltsev, Oleg & Kurkela, Aleksi**. *"How perturbative QCD constrains the equation of state at neutron-star densities"*, *Phys. Rev. Lett.* **128**, 202701 (2022). [doi:10.1103/PhysRevLett.128.202701](https://doi.org/10.1103/PhysRevLett.128.202701).
+- **Fraga, Eduardo S., Kurkela, Aleksi, & Vuorinen, Aleksi**. *"Interacting quark matter equation of state for compact stars"*, *Astrophys. J. Lett.* **781**, L25 (2014). [doi:10.1088/2041-8205/781/2/L25](https://doi.org/10.1088/2041-8205/781/2/L25).
+- **LIGO Scientific & Virgo Collaborations**. *"GW170817: Measurements of neutron star radii and equation of state"*, *Phys. Rev. Lett.* **121**, 161101 (2018). [doi:10.1103/PhysRevLett.121.161101](https://doi.org/10.1103/PhysRevLett.121.161101).
+- **Riley, Thomas E. et al.**. *"A NICER view of PSR J0030+0451: Millisecond pulsar parameter estimation"*, *Astrophys. J. Lett.* **887**, L21 (2019). [doi:10.3847/2041-8213/ab481c](https://doi.org/10.3847/2041-8213/ab481c).
+- **Riley, Thomas E. et al.**. *"A NICER view of the massive pulsar PSR J0740+6620 informed by radio timing and XMM-Newton spectroscopy"*, *Astrophys. J. Lett.* **918**, L27 (2021). [doi:10.3847/2041-8213/ac0a81](https://doi.org/10.3847/2041-8213/ac0a81).
+- **Choudhury, Devarshi et al.**. *"A NICER view of the nearest and brightest millisecond pulsar: PSR J0437–4715"*, *Astrophys. J. Lett.* **971**, L20 (2024).
+- **Antoniadis, John et al.**. *"A massive pulsar in a compact relativistic binary"*, *Science* **340**, 1233232 (2013). [doi:10.1126/science.1233232](https://doi.org/10.1126/science.1233232).
+- **Romani, Roger W. et al.**. *"PSR J0952-0607: The fastest and heaviest known galactic neutron star"*, *Astrophys. J. Lett.* **934**, L17 (2022).
+- **Hartle, James B.**. *"Slowly rotating relativistic stars. I. Equations of structure"*, *Astrophys. J.* **150**, 1005 (1967). [doi:10.1086/149400](https://doi.org/10.1086/149400).
+- **Lindblom, Lee**. *"Determining the nuclear equation of state from neutron-star masses and radii"*, *Astrophys. J.* **398**, 569 (1992).
+- **Hinderer, Tanja**. *"Tidal Love numbers of neutron stars"*, *Astrophys. J.* **677**, 1216–1220 (2008). [doi:10.1086/533487](https://doi.org/10.1086/533487).
+- **Read, Jocelyn S., Lackey, Benjamin D., Owen, Benjamin J., & Friedman, John L.**. *"Constraints on a phenomenologically parametrized neutron-star equation of state"*, *Phys. Rev. D* **79**, 124032 (2009). [doi:10.1103/PhysRevD.79.124032](https://doi.org/10.1103/PhysRevD.79.124032).
+- **Douchin, F. & Haensel, P.**. *"A unified equation of state of dense matter and neutron star structure"*, *Astron. Astrophys.* **380**, 151–167 (2001). [doi:10.1051/0004-6361:20011402](https://doi.org/10.1051/0004-6361:20011402).
+- **Potekhin, A. Y. et al.**. *"Analytical representations of unified equations of state for neutron-star matter"*, *Astron. Astrophys.* **560**, A48 (2013). [doi:10.1051/0004-6361/201321697](https://doi.org/10.1051/0004-6361/201321697).
+- **Link, Bennett, Epstein, Richard I., & Lattimer, James M.**. *"Pulsar constraints on neutron star structure and equation of state"*, *Phys. Rev. Lett.* **83**, 3362–3365 (1999). [doi:10.1103/PhysRevLett.83.3362](https://doi.org/10.1103/PhysRevLett.83.3362).
+- **Andersson, N., Glampedakis, K., Ho, W. C. G., & Espinoza, C. M.**. *"Pulsar glitches: The crust is not enough"*, *Phys. Rev. Lett.* **109**, 241103 (2012). [doi:10.1103/PhysRevLett.109.241103](https://doi.org/10.1103/PhysRevLett.109.241103).
+- **Chamel, N.**. *"Crustal entrainment and pulsar glitches"*, *Phys. Rev. Lett.* **110**, 011101 (2013). [doi:10.1103/PhysRevLett.110.011101](https://doi.org/10.1103/PhysRevLett.110.011101).
+- **Watanabe, Gentaro & Pethick, C. J.**. *"Superfluid density of neutrons in the inner crust of neutron stars: New life for pulsar glitch models"*, *Phys. Rev. Lett.* **119**, 062701 (2017). [doi:10.1103/PhysRevLett.119.062701](https://doi.org/10.1103/PhysRevLett.119.062701).
+
+### 12.4 Cosmological Observables & Growth of Structure
+
+- **DESI Collaboration**. *"DESI DR2 Results II: Measurements of baryon acoustic oscillations and cosmological constraints"*, Preprint (2025). [arXiv:2503.14738 [astro-ph.CO]](https://arxiv.org/abs/2503.14738).
+- **Scolnic, Dan et al.**. *"The Pantheon+ analysis: The full data set and light-curve release"*, *Astrophys. J.* **938**, 113 (2022). [doi:10.3847/1538-4357/ac8b7a](https://doi.org/10.3847/1538-4357/ac8b7a).
+- **Brout, Dillon et al.**. *"The Pantheon+ analysis: Cosmological constraints"*, *Astrophys. J.* **938**, 110 (2022). [doi:10.3847/1538-4357/ac8e04](https://doi.org/10.3847/1538-4357/ac8e04).
+- **Planck Collaboration**. *"Planck 2018 results. VI. Cosmological parameters"*, *Astron. Astrophys.* **641**, A6 (2020). [doi:10.1051/0004-6361/201833910](https://doi.org/10.1051/0004-6361/201833910).
+- **Chen, Lu, Huang, Qing-Guo, & Wang, Ke**. *"Distance priors from Planck final release"*, *J. Cosmol. Astropart. Phys.* **2019**(02), 028 (2019). [doi:10.1088/1475-7516/2019/02/028](https://doi.org/10.1088/1475-7516/2019/02/028).
+- **Beutler, Florian et al.**. *"The 6dF Galaxy Survey: $z\approx0$ measurements of the growth rate and $\sigma_8$"*, *Mon. Not. R. Astron. Soc.* **423**, 3430–3444 (2012). [doi:10.1111/j.1365-2966.2012.21136.x](https://doi.org/10.1111/j.1365-2966.2012.21136.x).
+- **eBOSS Collaboration**. *"Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Cosmological implications from two decades of spectroscopic surveys at the Apache Point Observatory"*, *Phys. Rev. D* **103**, 083533 (2021). [doi:10.1103/PhysRevD.103.083533](https://doi.org/10.1103/PhysRevD.103.083533).
+- **Wright, Angus H. et al.**. *"KiDS-Legacy: Cosmological constraints from cosmic shear with the complete Kilo-Degree Survey"*, Preprint (2025). [arXiv:2503.19441 [astro-ph.CO]](https://arxiv.org/abs/2503.19441).
+- **DES Collaboration (Abbott, T. M. C. et al.)**. *"Dark Energy Survey Year 6 results: Cosmological constraints from cosmic shear"*, Preprint (2026). [arXiv:2602.10065 [astro-ph.CO]](https://arxiv.org/abs/2602.10065).
+- **Madhavacheril, Mathew S. et al.**. *"The Atacama Cosmology Telescope: DR6 gravitational lensing map and cosmological parameters"*, *Astrophys. J.* **962**, 113 (2024).
+- **Qu, Frank J. et al.**. *"The Atacama Cosmology Telescope: A measurement of the DR6 CMB lensing power spectrum and its implications for structure growth"*, *Astrophys. J.* **962**, 112 (2024).
+- **Takahashi, Ryuichi et al.**. *"Revising the halofit model for the nonlinear matter power spectrum"*, *Astrophys. J.* **761**, 152 (2012). [doi:10.1088/0004-637X/761/2/152](https://doi.org/10.1088/0004-637X/761/2/152).
+- **Beltrán Jiménez, Jose, Heisenberg, Lavinia, Olmo, Gonzalo J., & Rubiera-Garcia, Diego**. *"Born-Infeld inspired modifications of gravity"*, *Phys. Rept.* **727**, 1–129 (2018). [doi:10.1016/j.physrep.2017.11.001](https://doi.org/10.1016/j.physrep.2017.11.001) · [arXiv:1704.03351 [gr-qc]](https://arxiv.org/abs/1704.03351).
+- **Lattimer, James M. & Prakash, Madappa**. *"Neutron star structure and the equation of state"*, *Astrophys. J.* **550**, 426–442 (2001). [doi:10.1086/319702](https://doi.org/10.1086/319702) · [arXiv:astro-ph/0002232](https://arxiv.org/abs/astro-ph/0002232).
+- **Mohr, Peter J., Newell, David B., Taylor, Barry N., & Tiesinga, Eite**. *"CODATA recommended values of the fundamental physical constants: 2022"*, *Rev. Mod. Phys.* **97**, 025002 (2025). [doi:10.1103/RevModPhys.97.025002](https://doi.org/10.1103/RevModPhys.97.025002) · [arXiv:2409.03787](https://arxiv.org/abs/2409.03787).
+- **Landry, Philippe & Essick, Reed**. *"Nonparametric inference of the neutron star equation of state from gravitational wave observations"*, *Phys. Rev. D* **99**, 084049 (2019). [doi:10.1103/PhysRevD.99.084049](https://doi.org/10.1103/PhysRevD.99.084049) · [arXiv:1811.12529](https://arxiv.org/abs/1811.12529).
+- **Eides, Michael I., Grotch, Howard, & Shelyuto, Valery A.**. *"Theory of light hydrogenlike atoms"*, *Phys. Rept.* **342**, 63–261 (2001). [arXiv:hep-ph/0002158](https://arxiv.org/abs/hep-ph/0002158).
+- **Gilman, R. et al.**. *"Technical design report for the Paul Scherrer Institute experiment R-12-01.1: Studying the proton “radius” puzzle with $\mu p$ elastic scattering"*, Preprint (2017). [arXiv:1709.09753 [physics.ins-det]](https://arxiv.org/abs/1709.09753).
+- **Maisenbacher, Lothar, Wirthl, Vitaly, Matveev, Arthur, et al.**. *"Sub-part-per-trillion test of the Standard Model with atomic hydrogen"*, Preprint (2026). [arXiv:2602.14980 [physics.atom-ph]](https://arxiv.org/abs/2602.14980).
+- **Bullis, R. G., Tavis, W. L., Weiss, M. R., et al.**. *"Precision spectroscopy of 2S-nS transitions in atomic hydrogen: A determination of the proton charge radius"*, Preprint (2026). [arXiv:2604.26401 [physics.atom-ph]](https://arxiv.org/abs/2604.26401).
+- **NANOGrav Collaboration (Arzoumanian, Zaven et al.)**. *"The NANOGrav 11-year data set: High-precision timing of 45 millisecond pulsars"*, *Astrophys. J. Suppl.* **235**, 37 (2018). [doi:10.3847/1538-4365/aab5b0](https://doi.org/10.3847/1538-4365/aab5b0) · [arXiv:1801.01837](https://arxiv.org/abs/1801.01837).
+
+### 12.5 Prior Art, Effective Field Theories & Numerical Foundations
+
+- **Barragán, Carlos & Olmo, Gonzalo J.**. *"Isotropic and anisotropic bouncing cosmologies in Palatini gravity"*, *Phys. Rev. D* **82**, 084015 (2010). [doi:10.1103/PhysRevD.82.084015](https://doi.org/10.1103/PhysRevD.82.084015) · [arXiv:1005.4136](https://arxiv.org/abs/1005.4136).
+- **Herzog, Gabriel & Sanchis-Alepuz, Hèlios**. *"Neutron stars in Palatini $R+\alpha R^2$ and $R+\alpha R^2+\beta Q$ theories"*, *Eur. Phys. J. C* **81**, 888 (2021). [doi:10.1140/epjc/s10052-021-09662-z](https://doi.org/10.1140/epjc/s10052-021-09662-z) · [arXiv:2102.05722](https://arxiv.org/abs/2102.05722).
+- **Pachucki, Krzysztof et al.**. *"Comprehensive theory of the Lamb shift in light muonic atoms"*, *Rev. Mod. Phys.* **96**, 015001 (2024). [doi:10.1103/RevModPhys.96.015001](https://doi.org/10.1103/RevModPhys.96.015001) · [arXiv:2212.13782](https://arxiv.org/abs/2212.13782).
+- **Delhom, Adrià, Olmo, Gonzalo J., & Orazi, Emanuele**. *"Ricci-based gravity theories and their impact on Maxwell and nonlinear electromagnetic models"*, *J. High Energy Phys.* **11**, 149 (2019). [doi:10.1007/JHEP11(2019)149](https://doi.org/10.1007/JHEP11(2019)149).
+- **Barker, Will & Marzo, Carlo**. *"Particle spectra of general Ricci-type Palatini or metric-affine theories"*, *Phys. Rev. D* **109**, 104017 (2024). [doi:10.1103/PhysRevD.109.104017](https://doi.org/10.1103/PhysRevD.109.104017).
+- **Li, Baojiu, Barrow, John D., & Mota, David F.**. *"Cosmology of Ricci-tensor-squared gravity in the Palatini variational approach"*, *Phys. Rev. D* **76**, 104047 (2007). [doi:10.1103/PhysRevD.76.104047](https://doi.org/10.1103/PhysRevD.76.104047).
+- **Gomes, Daniel A. et al.**. *"Cosmological constraints of Palatini $f(\mathcal{R})$ gravity"*, *J. Cosmol. Astropart. Phys.* **01**, 011 (2024). [doi:10.1088/1475-7516/2024/01/011](https://doi.org/10.1088/1475-7516/2024/01/011).
+- **Dye, Steven P., Gonderinger, Matthew, & Paz, Gil**. *"Elements of QED-NRQED effective field theory. II. Matching of contact interactions"*, *Phys. Rev. D* **100**, 054010 (2019). [doi:10.1103/PhysRevD.100.054010](https://doi.org/10.1103/PhysRevD.100.054010).
+- **Crowe, D., Hasan, S. M., & Wackeroth, D.**. *"Radiative corrections to elastic lepton-proton scattering with focus on two-photon-exchange diagrams"*, Preprint (2026). [arXiv:2605.31123](https://arxiv.org/abs/2605.31123).
+
