@@ -1,0 +1,8 @@
+marimo>=0.9
+numpy
+scipy
+matplotlib
+psutil
+camb
+torch
+huggingface_hub>=0.25
